@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type PostModel {
+  id: ID!
+  message: String!
+  length: Int!
+  author: String!
+}
+
+type Query {
+  getAllPosts: [PostModel!]!
+  getPostById(id: Float!): PostModel!
+}
+
+type Mutation {
+  createPost(message: String!, length: Int!, author: String!): PostModel!
+  deletePost(id: Float!): PostModel!
+}
